@@ -29,7 +29,7 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:visibility="invisible" />
 
-    <TextView
+    <org.team639.scouting.TeamView
         android:id="@+id/R3"
         android:layout_width="40dp"
         android:layout_height="wrap_content"
@@ -45,7 +45,7 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:textColor="@color/redAllianceText" />
 
-    <TextView
+    <org.team639.scouting.TeamView
         android:id="@+id/R2"
         android:layout_width="40dp"
         android:layout_height="wrap_content"
@@ -61,7 +61,7 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:textColor="@color/redAllianceText" />
 
-    <TextView
+    <org.team639.scouting.TeamView
         android:id="@+id/B3"
         android:layout_width="40dp"
         android:layout_height="wrap_content"
@@ -77,7 +77,7 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:textColor="@color/blueAllianceText" />
 
-    <TextView
+    <org.team639.scouting.TeamView
         android:id="@+id/B2"
         android:layout_width="40dp"
         android:layout_height="wrap_content"
@@ -94,7 +94,7 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:textColor="@color/blueAllianceText" />
 
-    <TextView
+    <org.team639.scouting.TeamView
         android:id="@+id/R1"
         android:layout_width="40dp"
         android:layout_height="wrap_content"
@@ -110,7 +110,7 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:textColor="@color/redAllianceText" />
 
-    <TextView
+    <org.team639.scouting.TeamView
         android:id="@+id/B1"
         android:layout_width="40dp"
         android:layout_height="wrap_content"

@@ -49,74 +49,32 @@ public class MatchDataAdapter extends BaseAdapter {
 	}
 	
 	private void addTeamData(View row, MatchData data) {
-		TextView team;
-		MatchData.CardPenalty card;
+		TeamView team;
 
-		team = (TextView) row.findViewById(R.id.R1);
+		team = (TeamView) row.findViewById(R.id.R1);
 		team.setText(data.getTeam(MatchData.TeamStation.RED_1));
-		card = data.getCard(MatchData.TeamStation.RED_1);
-		if (card != MatchData.CardPenalty.CARD_NONE) {
-			team.setTextColor(context.getResources().getColor(R.color.redAllianceTextDim));
-			if (card == MatchData.CardPenalty.CARD_YELLOW)
-				team.setBackgroundResource(R.drawable.red_left_yellow);
-			else
-				team.setBackgroundResource(R.drawable.red_left_red);
-		}
+		team.setCard(data.getCard(MatchData.TeamStation.RED_1));
 		
-		team = (TextView) row.findViewById(R.id.R2);
+		team = (TeamView) row.findViewById(R.id.R2);
 		team.setText(data.getTeam(MatchData.TeamStation.RED_2));
-		card = data.getCard(MatchData.TeamStation.RED_2);
-		if (card != MatchData.CardPenalty.CARD_NONE) {
-			team.setTextColor(context.getResources().getColor(R.color.redAllianceTextDim));
-			if (card == MatchData.CardPenalty.CARD_YELLOW)
-				team.setBackgroundResource(R.drawable.red_mid_yellow);
-			else
-				team.setBackgroundResource(R.drawable.red_mid_red);
-		}
+		team.setCard(data.getCard(MatchData.TeamStation.RED_2));
 		
-		team = (TextView) row.findViewById(R.id.R3);
+		team = (TeamView) row.findViewById(R.id.R3);
 		team.setText(data.getTeam(MatchData.TeamStation.RED_3));
-		card = data.getCard(MatchData.TeamStation.RED_3);
-		if (card != MatchData.CardPenalty.CARD_NONE) {
-			team.setTextColor(context.getResources().getColor(R.color.redAllianceTextDim));
-			if (card == MatchData.CardPenalty.CARD_YELLOW)
-				team.setBackgroundResource(R.drawable.red_right_yellow);
-			else
-				team.setBackgroundResource(R.drawable.red_right_red);
-		}
-		
-		team = (TextView) row.findViewById(R.id.B1);
+		team.setCard(data.getCard(MatchData.TeamStation.RED_3));
+
+		team = (TeamView) row.findViewById(R.id.B1);
 		team.setText(data.getTeam(MatchData.TeamStation.BLUE_1));
-		card = data.getCard(MatchData.TeamStation.BLUE_1);
-		if (card != MatchData.CardPenalty.CARD_NONE) {
-			team.setTextColor(context.getResources().getColor((R.color.blueAllianceTextDim)));
-			if (card == MatchData.CardPenalty.CARD_YELLOW)
-				team.setBackgroundResource(R.drawable.blue_left_yellow);
-			else
-				team.setBackgroundResource(R.drawable.blue_left_red);
-		}
+		team.setCard(data.getCard(MatchData.TeamStation.BLUE_1));
 		
-		team = (TextView) row.findViewById(R.id.B2);
+		team = (TeamView) row.findViewById(R.id.B2);
 		team.setText(data.getTeam(MatchData.TeamStation.BLUE_2));
-		card = data.getCard(MatchData.TeamStation.BLUE_2);
-		if (card != MatchData.CardPenalty.CARD_NONE) {
-			team.setTextColor(context.getResources().getColor((R.color.blueAllianceTextDim)));
-			if (card == MatchData.CardPenalty.CARD_YELLOW)
-				team.setBackgroundResource(R.drawable.blue_mid_yellow);
-			else
-				team.setBackgroundResource(R.drawable.blue_mid_red);
-		}
-		
-		team = (TextView) row.findViewById(R.id.B3);
+		team.setCard(data.getCard(MatchData.TeamStation.BLUE_2));
+
+		team = (TeamView) row.findViewById(R.id.B3);
 		team.setText(data.getTeam(MatchData.TeamStation.BLUE_3));
-		card = data.getCard(MatchData.TeamStation.BLUE_3);
-		if (card != MatchData.CardPenalty.CARD_NONE) {
-			team.setTextColor(context.getResources().getColor((R.color.blueAllianceTextDim)));
-			if (card == MatchData.CardPenalty.CARD_YELLOW)
-				team.setBackgroundResource(R.drawable.blue_right_yellow);
-			else
-				team.setBackgroundResource(R.drawable.blue_right_red);
-		}
+		team.setCard(data.getCard(MatchData.TeamStation.BLUE_3));
+
 	}
 	
 	private void addMatchData(View row, MatchData data) {
