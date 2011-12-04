@@ -52,28 +52,22 @@ public class MatchDataAdapter extends BaseAdapter {
 		TeamView team;
 
 		team = (TeamView) row.findViewById(R.id.R1);
-		team.setText(data.getTeam(MatchData.TeamStation.RED_1));
-		team.setCard(data.getCard(MatchData.TeamStation.RED_1));
+		team.readTeamData(data, MatchData.TeamStation.RED_1);
 		
 		team = (TeamView) row.findViewById(R.id.R2);
-		team.setText(data.getTeam(MatchData.TeamStation.RED_2));
-		team.setCard(data.getCard(MatchData.TeamStation.RED_2));
+		team.readTeamData(data, MatchData.TeamStation.RED_2);
 		
 		team = (TeamView) row.findViewById(R.id.R3);
-		team.setText(data.getTeam(MatchData.TeamStation.RED_3));
-		team.setCard(data.getCard(MatchData.TeamStation.RED_3));
+		team.readTeamData(data, MatchData.TeamStation.RED_3);
 
 		team = (TeamView) row.findViewById(R.id.B1);
-		team.setText(data.getTeam(MatchData.TeamStation.BLUE_1));
-		team.setCard(data.getCard(MatchData.TeamStation.BLUE_1));
+		team.readTeamData(data, MatchData.TeamStation.BLUE_1);
 		
 		team = (TeamView) row.findViewById(R.id.B2);
-		team.setText(data.getTeam(MatchData.TeamStation.BLUE_2));
-		team.setCard(data.getCard(MatchData.TeamStation.BLUE_2));
+		team.readTeamData(data, MatchData.TeamStation.BLUE_2);
 
 		team = (TeamView) row.findViewById(R.id.B3);
-		team.setText(data.getTeam(MatchData.TeamStation.BLUE_3));
-		team.setCard(data.getCard(MatchData.TeamStation.BLUE_3));
+		team.readTeamData(data, MatchData.TeamStation.BLUE_3);
 
 	}
 	
@@ -82,10 +76,10 @@ public class MatchDataAdapter extends BaseAdapter {
 		text.setText(data.getMatchString());
 		text = (TextView) row.findViewById(R.id.RScore);
 		row.findViewById(R.id.MatchTime).setVisibility(View.INVISIBLE);
-		text.setText(data.getRedScore());
+		text.setText(Integer.toString(data.getRedScore()));
 		text = (TextView) row.findViewById(R.id.BScore);
 		text.setVisibility(View.VISIBLE);
-		text.setText(data.getBlueScore());
+		text.setText(Integer.toString(data.getBlueScore()));
 		text.setBackgroundResource(R.drawable.blue_win);
 		text.setVisibility(View.VISIBLE);
 	}

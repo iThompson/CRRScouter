@@ -19,32 +19,32 @@ public class MatchData {
 	
 	private final String MatchID = "Q-27";
 	private final Boolean matchDone = true;
-	private final String RedResult = "27";
-	private final String BlueResult = "54";
+	private final int RedResult = 27;
+	private final int BlueResult = 54;
 	
-	private final String Red1 = "639";
-	private final CardPenalty Red1Card = CardPenalty.CARD_NONE;
-	private final String Red2 = "1511";
-	private final CardPenalty Red2Card = CardPenalty.CARD_YELLOW;
-	private final String Red3 = "4243";
-	private final CardPenalty Red3Card = CardPenalty.CARD_RED;
+	private final int Red1 = 639;
+	private final CardPenalty Red1Card = CardPenalty.CARD_RED;
+	private final int Red2 = 1511;
+	private final CardPenalty Red2Card = CardPenalty.CARD_NONE;
+	private final int Red3 = 4243;
+	private final CardPenalty Red3Card = CardPenalty.CARD_YELLOW;
 	
-	private final String Blue1 = "1126";
+	private final int Blue1 = 1126;
 	private final CardPenalty Blue1Card = CardPenalty.CARD_NONE;
-	private final String Blue2 = "2056";
+	private final int Blue2 = 2056;
 	private final CardPenalty Blue2Card = CardPenalty.CARD_YELLOW;
-	private final String Blue3 = "217";
+	private final int Blue3 = 217;
 	private final CardPenalty Blue3Card = CardPenalty.CARD_RED;
 	
 	public String getMatchString() {
 		return MatchID;
 	}
 	
-	public String getRedScore() {
+	public int getRedScore() {
 		return RedResult;
 	}
 	
-	public String getBlueScore() {
+	public int getBlueScore() {
 		return BlueResult;
 	}
 	
@@ -52,7 +52,7 @@ public class MatchData {
 		return matchDone;
 	}
 	
-	public String getTeam(TeamStation station) {
+	public int getTeamID(TeamStation station) {
 		switch (station) {
 		case RED_1:
 			return Red1;
@@ -68,7 +68,7 @@ public class MatchData {
 			return Blue3;
 		}
 		
-		return "";
+		return -1;
 	}
 	
 	public CardPenalty getCard(TeamStation station) {

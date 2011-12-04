@@ -4,7 +4,7 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
-import org.team639.scouting.MatchData.CardPenalty;
+import org.team639.scouting.MatchData.*;
 
 public class TeamView extends TextView {
 	
@@ -13,19 +13,17 @@ public class TeamView extends TextView {
 	
 	private CardPenalty mCard = CardPenalty.CARD_NONE;
 
+	// We don't need to do anything with constructors, let the superclass do it's thing
 	public TeamView(Context context) {
 		super(context);
-		// TODO Auto-generated constructor stub
 	}
 
 	public TeamView(Context context, AttributeSet attrs) {
 		super(context, attrs);
-		// TODO Auto-generated constructor stub
 	}
 
 	public TeamView(Context context, AttributeSet attrs, int defStyle) {
 		super(context, attrs, defStyle);
-		// TODO Auto-generated constructor stub
 	}
 	
 	@Override
@@ -39,9 +37,18 @@ public class TeamView extends TextView {
 		return drawableState;
 	}
 	
+	public void readTeamData(MatchData data, TeamStation station) {
+		setTeamID(data.getTeamID(station));
+		setCard(data.getCard(station));
+	}
+	
 	public void setCard(CardPenalty card) {
 		mCard = card;
 		refreshDrawableState();
+	}
+	
+	public void setTeamID(int team) {
+		setText(Integer.toString(team));
 	}
 
 }
