@@ -24,7 +24,5 @@ public class CRRScouterActivity extends Activity {
         
         MatchDataAdapter adapter = new MatchDataAdapter(this, matchList);
         teamList.setAdapter(adapter);
-        
-        // This is a comment testing stuff
     }
 }
