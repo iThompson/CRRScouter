@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, CRRScouterActivity!</string>
+    <string name="app_name">CRRScouter</string>
+    <string name="teamNull">9999</string>
+    <string name="scoreNull">---</string>
+    <string name="matchTimeNull">--:--\n--</string>
+    <string name="matchNumNull">_-__</string>
+
+</resources>
