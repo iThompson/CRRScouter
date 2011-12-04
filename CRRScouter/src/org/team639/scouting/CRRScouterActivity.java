@@ -24,5 +24,7 @@ public class CRRScouterActivity extends Activity {
         
         MatchDataAdapter adapter = new MatchDataAdapter(this, matchList);
         teamList.setAdapter(adapter);
+        
+        // Why did the push dialog not work???
     }
 }
