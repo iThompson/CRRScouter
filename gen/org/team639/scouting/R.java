@@ -12,16 +12,16 @@ public final class R {
     }
     public static final class color {
         public static final int blueAlliance=0x7f040001;
-        public static final int blueAllianceDim=0x7f040006;
+        public static final int blueAllianceDim=0x7f040008;
         public static final int blueAllianceText=0x7f040003;
-        public static final int blueAllianceTextDim=0x7f04000a;
+        public static final int blueAllianceTextDim=0x7f040005;
         public static final int redAlliance=0x7f040000;
-        public static final int redAllianceDim=0x7f040005;
+        public static final int redAllianceDim=0x7f040007;
         public static final int redAllianceText=0x7f040002;
-        public static final int redAllianceTextDim=0x7f040009;
-        public static final int redCard=0x7f040007;
-        public static final int winAlliance=0x7f040004;
-        public static final int yellowCard=0x7f040008;
+        public static final int redAllianceTextDim=0x7f040004;
+        public static final int redCard=0x7f040009;
+        public static final int winAlliance=0x7f040006;
+        public static final int yellowCard=0x7f04000a;
     }
     public static final class dimen {
         public static final int fieldOutline=0x7f050000;

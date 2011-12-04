@@ -56,7 +56,7 @@ public class MatchDataAdapter extends BaseAdapter {
 		team.setText(data.getTeam(MatchData.TeamStation.RED_1));
 		card = data.getCard(MatchData.TeamStation.RED_1);
 		if (card != MatchData.CardPenalty.CARD_NONE) {
-			team.setTextColor(R.color.redAllianceTextDim);
+			team.setTextColor(context.getResources().getColor(R.color.redAllianceTextDim));
 			if (card == MatchData.CardPenalty.CARD_YELLOW)
 				team.setBackgroundResource(R.drawable.red_left_yellow);
 			else
@@ -67,7 +67,7 @@ public class MatchDataAdapter extends BaseAdapter {
 		team.setText(data.getTeam(MatchData.TeamStation.RED_2));
 		card = data.getCard(MatchData.TeamStation.RED_2);
 		if (card != MatchData.CardPenalty.CARD_NONE) {
-			team.setTextColor(R.color.redAllianceTextDim);
+			team.setTextColor(context.getResources().getColor(R.color.redAllianceTextDim));
 			if (card == MatchData.CardPenalty.CARD_YELLOW)
 				team.setBackgroundResource(R.drawable.red_mid_yellow);
 			else
@@ -78,7 +78,7 @@ public class MatchDataAdapter extends BaseAdapter {
 		team.setText(data.getTeam(MatchData.TeamStation.RED_3));
 		card = data.getCard(MatchData.TeamStation.RED_3);
 		if (card != MatchData.CardPenalty.CARD_NONE) {
-			team.setTextColor(R.color.redAllianceTextDim);
+			team.setTextColor(context.getResources().getColor(R.color.redAllianceTextDim));
 			if (card == MatchData.CardPenalty.CARD_YELLOW)
 				team.setBackgroundResource(R.drawable.red_right_yellow);
 			else
@@ -89,7 +89,7 @@ public class MatchDataAdapter extends BaseAdapter {
 		team.setText(data.getTeam(MatchData.TeamStation.BLUE_1));
 		card = data.getCard(MatchData.TeamStation.BLUE_1);
 		if (card != MatchData.CardPenalty.CARD_NONE) {
-			team.setTextColor(R.color.blueAllianceTextDim);
+			team.setTextColor(context.getResources().getColor((R.color.blueAllianceTextDim)));
 			if (card == MatchData.CardPenalty.CARD_YELLOW)
 				team.setBackgroundResource(R.drawable.blue_left_yellow);
 			else
@@ -100,7 +100,7 @@ public class MatchDataAdapter extends BaseAdapter {
 		team.setText(data.getTeam(MatchData.TeamStation.BLUE_2));
 		card = data.getCard(MatchData.TeamStation.BLUE_2);
 		if (card != MatchData.CardPenalty.CARD_NONE) {
-			team.setTextColor(R.color.blueAllianceTextDim);
+			team.setTextColor(context.getResources().getColor((R.color.blueAllianceTextDim)));
 			if (card == MatchData.CardPenalty.CARD_YELLOW)
 				team.setBackgroundResource(R.drawable.blue_mid_yellow);
 			else
@@ -111,7 +111,7 @@ public class MatchDataAdapter extends BaseAdapter {
 		team.setText(data.getTeam(MatchData.TeamStation.BLUE_3));
 		card = data.getCard(MatchData.TeamStation.BLUE_3);
 		if (card != MatchData.CardPenalty.CARD_NONE) {
-			team.setTextColor(R.color.blueAllianceTextDim);
+			team.setTextColor(context.getResources().getColor((R.color.blueAllianceTextDim)));
 			if (card == MatchData.CardPenalty.CARD_YELLOW)
 				team.setBackgroundResource(R.drawable.blue_right_yellow);
 			else

@@ -4,13 +4,15 @@
     <color name="blueAlliance">#0066B3</color>
     <color name="redAllianceText">#000000</color>
     <color name="blueAllianceText">#FFFFFF</color>
+    <color name="redAllianceTextDim">#FFFFFF</color>
+    <color name="blueAllianceTextDim">#FFFFFF</color>
     <color name="winAlliance">#2DC480</color>
     <color name="redAllianceDim">#851014</color>
     <color name="blueAllianceDim">#00477D</color>
     <color name="redCard">#FF0000</color>
     <color name="yellowCard">#FFFF00</color>
-    <color name="redAllianceTextDim">#FFFFFF</color>
-    <color name="blueAllianceTextDim">#FFFFFF</color>
+    
+    
 
     
 </resources>
