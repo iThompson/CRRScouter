@@ -43,7 +43,7 @@
         android:gravity="center"
         android:text="@string/teamNull"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="@color/redAllianceText" />
+        android:textColor="@color/red_alliance_text" />
 
     <org.team639.scouting.TeamView
         android:id="@+id/R2"
@@ -59,7 +59,7 @@
         android:gravity="center"
         android:text="@string/teamNull"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="@color/redAllianceText" />
+        android:textColor="@color/red_alliance_text" />
 
     <org.team639.scouting.TeamView
         android:id="@+id/B3"
@@ -75,7 +75,7 @@
         android:gravity="center"
         android:text="@string/teamNull"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="@color/blueAllianceText" />
+        android:textColor="@color/blue_alliance_text" />
 
     <org.team639.scouting.TeamView
         android:id="@+id/B2"
@@ -92,7 +92,7 @@
         android:gravity="center"
         android:text="@string/teamNull"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="@color/blueAllianceText" />
+        android:textColor="@color/blue_alliance_text" />
 
     <org.team639.scouting.TeamView
         android:id="@+id/R1"
@@ -108,7 +108,7 @@
         android:gravity="center"
         android:text="@string/teamNull"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="@color/redAllianceText" />
+        android:textColor="@color/red_alliance_text" />
 
     <org.team639.scouting.TeamView
         android:id="@+id/B1"
@@ -125,7 +125,7 @@
         android:gravity="center"
         android:text="@string/teamNull"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="@color/blueAllianceText" />
+        android:textColor="@color/blue_alliance_text" />
 
     <TextView
         android:id="@+id/RScore"
@@ -141,7 +141,7 @@
         android:gravity="center"
         android:text="@string/scoreNull"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="@color/redAllianceText"
+        android:textColor="@color/red_alliance_text"
         android:visibility="visible" />
 
     <TextView
@@ -159,7 +159,7 @@
         android:gravity="center"
         android:text="@string/scoreNull"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="@color/blueAllianceText"
+        android:textColor="@color/blue_alliance_text"
         android:visibility="visible" />
 
 </RelativeLayout>

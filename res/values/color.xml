@@ -2,8 +2,8 @@
 <resources>
     <color name="redAlliance">#ED1C24</color>
     <color name="blueAlliance">#0066B3</color>
-    <color name="redAllianceText">#000000</color>
-    <color name="blueAllianceText">#FFFFFF</color>
+    <color name="redAllianceTextNorm">#000000</color>
+    <color name="blueAllianceTextNorm">#FFFFFF</color>
     <color name="redAllianceTextDim">#FFFFFF</color>
     <color name="blueAllianceTextDim">#FFFFFF</color>
     <color name="winAlliance">#2DC480</color>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:scout="http://schemas.android.com/apk/res/org.team639.scouting">
+
+    <item scout:red_card="true" android:color="@color/redAllianceTextDim"/>
+    <item scout:yellow_card="true" android:color="@color/redAllianceTextDim"/>
+    <item android:color="@color/redAllianceTextNorm"/>
+
+</selector>

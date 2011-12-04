@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:scout="http://schemas.android.com/apk/res/org.team639.scouting">
 
-    <solid android:color="@color/redAlliance"/>
-    <corners android:radius="1dp" android:topLeftRadius="0dp" android:bottomLeftRadius="5dp" android:topRightRadius="5dp" android:bottomRightRadius="0dp"/>
-    <padding android:left="0dp" android:top="0dp" android:right="0dp" android:bottom="0dp" />
+    <item android:drawable="@drawable/red_right_red" scout:red_card="true"/>
+    <item android:drawable="@drawable/red_right_yellow" scout:yellow_card="true"/>
+    <item android:drawable="@drawable/red_right_none"/>
 
-</shape>
+</selector>
