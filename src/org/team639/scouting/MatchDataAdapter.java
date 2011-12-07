@@ -7,7 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.TextView;
 
 public class MatchDataAdapter extends BaseAdapter {
 	private Context context;
@@ -52,22 +51,22 @@ public class MatchDataAdapter extends BaseAdapter {
 		TeamView team;
 
 		team = (TeamView) row.findViewById(R.id.R1);
-		team.readTeamData(data, MatchData.TeamStation.RED_1);
+		team.readTeamData(data, MatchData.RED_1);
 		
 		team = (TeamView) row.findViewById(R.id.R2);
-		team.readTeamData(data, MatchData.TeamStation.RED_2);
+		team.readTeamData(data, MatchData.RED_2);
 		
 		team = (TeamView) row.findViewById(R.id.R3);
-		team.readTeamData(data, MatchData.TeamStation.RED_3);
+		team.readTeamData(data, MatchData.RED_3);
 
 		team = (TeamView) row.findViewById(R.id.B1);
-		team.readTeamData(data, MatchData.TeamStation.BLUE_1);
+		team.readTeamData(data, MatchData.BLUE_1);
 		
 		team = (TeamView) row.findViewById(R.id.B2);
-		team.readTeamData(data, MatchData.TeamStation.BLUE_2);
+		team.readTeamData(data, MatchData.BLUE_2);
 
 		team = (TeamView) row.findViewById(R.id.B3);
-		team.readTeamData(data, MatchData.TeamStation.BLUE_3);
+		team.readTeamData(data, MatchData.BLUE_3);
 
 	}
 	

@@ -13,7 +13,7 @@ public class TeamView extends TextView {
 	
 	private CardPenalty mCard = CardPenalty.CARD_NONE;
 
-	// We don't need to do anything with constructors, let the superclass do it's thing
+	// We don't need to do anything with constructors, let the superclass do its thing
 	public TeamView(Context context) {
 		super(context);
 	}
@@ -37,7 +37,7 @@ public class TeamView extends TextView {
 		return drawableState;
 	}
 	
-	public void readTeamData(MatchData data, TeamStation station) {
+	public void readTeamData(MatchData data, int station) {
 		setTeamID(data.getTeamID(station));
 		setCard(data.getCard(station));
 	}

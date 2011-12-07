@@ -8,33 +8,22 @@ public class MatchData {
 		CARD_RED
 	}
 	
-	public enum TeamStation {
-		RED_1,
-		RED_2,
-		RED_3,
-		BLUE_1,
-		BLUE_2,
-		BLUE_3
-	}
+	public static final int RED_1 = 0;
+	public static final int RED_2 = 1;
+	public static final int RED_3 = 2;
+	public static final int BLUE_1 = 3;
+	public static final int BLUE_2 = 4;
+	public static final int BLUE_3 = 5;
+	
+	public static final int NUM_TEAMS = 6;
 	
 	private final String MatchID = "Q-27";
 	private final Boolean matchDone = true;
 	private final int RedResult = 54;
 	private final int BlueResult = 27;
 	
-	private final int Red1 = 639;
-	private final CardPenalty Red1Card = CardPenalty.CARD_RED;
-	private final int Red2 = 1511;
-	private final CardPenalty Red2Card = CardPenalty.CARD_NONE;
-	private final int Red3 = 4243;
-	private final CardPenalty Red3Card = CardPenalty.CARD_YELLOW;
-	
-	private final int Blue1 = 1126;
-	private final CardPenalty Blue1Card = CardPenalty.CARD_NONE;
-	private final int Blue2 = 2056;
-	private final CardPenalty Blue2Card = CardPenalty.CARD_YELLOW;
-	private final int Blue3 = 217;
-	private final CardPenalty Blue3Card = CardPenalty.CARD_RED;
+	private final int[] teams = {639, 1511, 4243, 1126, 2056, 217};
+	private final CardPenalty[] cards = {CardPenalty.CARD_RED, CardPenalty.CARD_NONE, CardPenalty.CARD_YELLOW, CardPenalty.CARD_NONE, CardPenalty.CARD_YELLOW, CardPenalty.CARD_RED};
 	
 	private final int mTimeHour = 11;
 	private final int mTimeMin = 37;
@@ -55,42 +44,20 @@ public class MatchData {
 		return matchDone;
 	}
 	
-	public int getTeamID(TeamStation station) {
-		switch (station) {
-		case RED_1:
-			return Red1;
-		case RED_2:
-			return Red2;
-		case RED_3:
-			return Red3;
-		case BLUE_1:
-			return Blue1;
-		case BLUE_2:
-			return Blue2;
-		case BLUE_3:
-			return Blue3;
+	public int getTeamID(int station) {
+		if (0 <= station && station < NUM_TEAMS) {
+			return teams[station];
+		} else {
+			return 0;
 		}
-		
-		return -1;
 	}
 	
-	public CardPenalty getCard(TeamStation station) {
-		switch (station) {
-		case RED_1:
-			return Red1Card;
-		case RED_2:
-			return Red2Card;
-		case RED_3:
-			return Red3Card;
-		case BLUE_1:
-			return Blue1Card;
-		case BLUE_2:
-			return Blue2Card;
-		case BLUE_3:
-			return Blue3Card;
+	public CardPenalty getCard(int station) {
+		if (0 <= station && station < NUM_TEAMS) {
+			return cards[station];
+		} else {
+			return CardPenalty.CARD_NONE;
 		}
-		
-		return CardPenalty.CARD_NONE;
 	}
 	
 	public int getMatchHour() {
