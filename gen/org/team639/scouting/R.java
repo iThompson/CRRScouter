@@ -16,6 +16,14 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
+        public static final int match_win=0x7f010002;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
         public static final int red_card=0x7f010001;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
@@ -58,41 +66,45 @@ containing a value of this type.
         public static final int blue_right_none=0x7f02000a;
         public static final int blue_right_red=0x7f02000b;
         public static final int blue_right_yellow=0x7f02000c;
-        public static final int blue_win=0x7f02000d;
-        public static final int ic_launcher=0x7f02000e;
-        public static final int match_time=0x7f02000f;
-        public static final int red_left=0x7f020010;
-        public static final int red_left_none=0x7f020011;
-        public static final int red_left_red=0x7f020012;
-        public static final int red_left_yellow=0x7f020013;
-        public static final int red_lose=0x7f020014;
-        public static final int red_mid=0x7f020015;
-        public static final int red_mid_none=0x7f020016;
-        public static final int red_mid_red=0x7f020017;
-        public static final int red_mid_yellow=0x7f020018;
-        public static final int red_right=0x7f020019;
-        public static final int red_right_none=0x7f02001a;
-        public static final int red_right_red=0x7f02001b;
-        public static final int red_right_yellow=0x7f02001c;
-        public static final int red_win=0x7f02001d;
+        public static final int blue_score=0x7f02000d;
+        public static final int blue_win=0x7f02000e;
+        public static final int ic_launcher=0x7f02000f;
+        public static final int match_time=0x7f020010;
+        public static final int red_left=0x7f020011;
+        public static final int red_left_none=0x7f020012;
+        public static final int red_left_red=0x7f020013;
+        public static final int red_left_yellow=0x7f020014;
+        public static final int red_lose=0x7f020015;
+        public static final int red_mid=0x7f020016;
+        public static final int red_mid_none=0x7f020017;
+        public static final int red_mid_red=0x7f020018;
+        public static final int red_mid_yellow=0x7f020019;
+        public static final int red_right=0x7f02001a;
+        public static final int red_right_none=0x7f02001b;
+        public static final int red_right_red=0x7f02001c;
+        public static final int red_right_yellow=0x7f02001d;
+        public static final int red_score=0x7f02001e;
+        public static final int red_win=0x7f02001f;
     }
     public static final class id {
-        public static final int B1=0x7f070009;
-        public static final int B2=0x7f070007;
-        public static final int B3=0x7f070004;
-        public static final int BScore=0x7f07000b;
-        public static final int MatchNumber=0x7f070002;
-        public static final int MatchTime=0x7f070003;
-        public static final int R1=0x7f070008;
-        public static final int R2=0x7f070006;
-        public static final int R3=0x7f070005;
-        public static final int RScore=0x7f07000a;
-        public static final int RelativeLayout1=0x7f070001;
+        public static final int B1=0x7f07000c;
+        public static final int B2=0x7f07000a;
+        public static final int B3=0x7f070007;
+        public static final int BScore=0x7f070003;
+        public static final int MatchNumber=0x7f070005;
+        public static final int MatchResult=0x7f070006;
+        public static final int MatchTime=0x7f070001;
+        public static final int R1=0x7f07000b;
+        public static final int R2=0x7f070009;
+        public static final int R3=0x7f070008;
+        public static final int RScore=0x7f070002;
+        public static final int RelativeLayout1=0x7f070004;
         public static final int TeamList=0x7f070000;
     }
     public static final class layout {
         public static final int main=0x7f030000;
-        public static final int match_row=0x7f030001;
+        public static final int match_result=0x7f030001;
+        public static final int match_row=0x7f030002;
     }
     public static final class string {
         public static final int app_name=0x7f060001;

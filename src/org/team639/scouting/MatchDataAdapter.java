@@ -72,16 +72,8 @@ public class MatchDataAdapter extends BaseAdapter {
 	}
 	
 	private void addMatchData(View row, MatchData data) {
-		TextView text = (TextView) row.findViewById(R.id.MatchNumber);
-		text.setText(data.getMatchString());
-		text = (TextView) row.findViewById(R.id.RScore);
-		row.findViewById(R.id.MatchTime).setVisibility(View.INVISIBLE);
-		text.setText(Integer.toString(data.getRedScore()));
-		text = (TextView) row.findViewById(R.id.BScore);
-		text.setVisibility(View.VISIBLE);
-		text.setText(Integer.toString(data.getBlueScore()));
-		text.setBackgroundResource(R.drawable.blue_win);
-		text.setVisibility(View.VISIBLE);
+		MatchResultView view = (MatchResultView) row.findViewById(R.id.MatchResult);
+		view.readMatchData(data);
 	}
 	
 }

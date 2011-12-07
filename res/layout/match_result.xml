@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TextView
+        android:id="@+id/MatchTime"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/match_time"
+        android:gravity="center"
+        android:lines="2"
+        android:text="@string/matchTimeNull"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="visible" />
+    <org.team639.scouting.ScoreView
+        android:id="@+id/RScore"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/red_score"
+        android:gravity="center"
+        android:text="@string/scoreNull"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/red_alliance_text"
+        android:visibility="invisible" />
+    <org.team639.scouting.ScoreView
+        android:id="@+id/BScore"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/RScore"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/blue_score"
+        android:gravity="center"
+        android:text="@string/scoreNull"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/blue_alliance_text"
+        android:visibility="invisible" />
+
+</RelativeLayout>

@@ -19,8 +19,8 @@ public class MatchData {
 	
 	private final String MatchID = "Q-27";
 	private final Boolean matchDone = true;
-	private final int RedResult = 27;
-	private final int BlueResult = 54;
+	private final int RedResult = 54;
+	private final int BlueResult = 27;
 	
 	private final int Red1 = 639;
 	private final CardPenalty Red1Card = CardPenalty.CARD_RED;
@@ -35,6 +35,9 @@ public class MatchData {
 	private final CardPenalty Blue2Card = CardPenalty.CARD_YELLOW;
 	private final int Blue3 = 217;
 	private final CardPenalty Blue3Card = CardPenalty.CARD_RED;
+	
+	private final int mTimeHour = 11;
+	private final int mTimeMin = 37;
 	
 	public String getMatchString() {
 		return MatchID;
@@ -88,5 +91,13 @@ public class MatchData {
 		}
 		
 		return CardPenalty.CARD_NONE;
+	}
+	
+	public int getMatchHour() {
+		return mTimeHour;
+	}
+	
+	public int getMatchMin() {
+		return mTimeMin;
 	}
 }

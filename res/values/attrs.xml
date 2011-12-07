@@ -3,5 +3,6 @@
 
     <attr name="yellow_card" format="boolean" />
     <attr name="red_card" format="boolean" />
+    <attr name="match_win" format="boolean" />
 
 </resources>

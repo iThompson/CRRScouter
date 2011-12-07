@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:scout="http://schemas.android.com/apk/res/org.team639.scouting">
+
+    <item android:drawable="@drawable/blue_win" scout:match_win="true"/>
+    <item android:drawable="@drawable/blue_lose"/>
+
+</selector>
